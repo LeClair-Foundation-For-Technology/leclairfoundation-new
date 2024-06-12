@@ -47,8 +47,16 @@
                     <div>
                         <form class="p-3 p-xl-4" data-bs-theme="light" data-bss-recipient="a12b2c854cf61dd89534c28d91eb141c" data-bss-subject="Request Form" data-bss-loading-message="Sending" data-bss-success-title="Your Message Has Been Sent" data-bss-success-message="Our team will respond within 24 hours." data-bss-error-title="Something went wrong" data-bss-error-message="Something went wrong" data-bss-redirect-url="thankyou.html">
                             <div class="mb-3"><input class="form-control" type="text" id="name-1" name="name" placeholder="Name" required=""></div>
-                            <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="Email" required=""></div><input class="form-control" type="tel" placeholder="Phone number" style="margin-bottom: 10px;" required="">
-                            <div class="mb-3"><textarea class="form-control" id="message-1" name="message" rows="6" placeholder="Tell us what you'd like to contact us about. Grants, Websites, Design, Hardware, Consulting, Etc."></textarea></div>
+                            <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="Email" required=""></div><input class="form-control" type="tel" placeholder="Phone number" style="margin-bottom: 10px;margin-top: 10px;" required=""><select class="form-select" style="margin-bottom: 10px;">
+                                <option value="0" selected="">Looking for?</option>
+                                <option value="12">Website</option>
+                                <option value="13">Logo/Graphics</option>
+                                <option value="14">Hardware</option>
+                                <option value="">General Info</option>
+                                <option value="">Grants Info</option>
+                                <option value="">Consulting/Advice</option>
+                            </select>
+                            <div class="mb-3"><textarea class="form-control" id="message-1" name="message" rows="6" placeholder="Any other info you'd like to provide?"></textarea></div>
                             <div><button class="btn btn-primary shadow d-block w-100" type="submit" style="color: white;">Send </button></div>
                         </form>
                     </div>
