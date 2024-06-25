@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="assets/css/Articles-Cards-images.css">
+    <link rel="stylesheet" href="assets/css/Timeline---Gabriela-Carvalho.css">
+    <link rel="stylesheet" href="assets/css/Timeline-Steps.css">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFF1GYQ5JB"></script>
 <script>
@@ -25,18 +27,28 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md sticky-top navbar-shrink py-3 navbar-light" id="mainNav">
-        <div class="container"><a href="index.html"><img src="assets/img/Screenshot%202024-06-06%20032514.png" width="233" height="69"></a><a class="navbar-brand d-flex align-items-center" href="index.html"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-shrink py-3 navbar-light" id="mainNav">
+        <div class="container"><a href="index.html"><img src="assets/img/Screenshot%202024-06-06%20032514.png" width="202" height="70"></a><a class="navbar-brand d-flex align-items-center" href="index.html"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="mission.html">Mission</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link " href="index.html#grants">Grants</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item">
+                        <div class="nav-item dropdown nav-link"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#">About</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="mission.html">Our Mission</a><a class="dropdown-item" href="projects.html"></a><a class="dropdown-item" href="history.html">Our History</a><a class="dropdown-item" href="grantinformation.html"></a></div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item dropdown nav-link"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#">Students &amp; Individuals</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="https://leclairfoundation.org/pricing.html#tab-2">Hardware Repair &amp; Setup</a><a class="dropdown-item" href="computer-donations.html">Computer Donations</a><a class="dropdown-item" href="https://leclairfoundation.org/pricing.html#tab-4">Consulting &amp; Advice</a><a class="dropdown-item" href="grantinformation.html"></a></div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item dropdown nav-link"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#">Business &amp; Non Profits</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="https://leclairfoundation.org/pricing.html#tab-1">Websites</a><a class="dropdown-item" href="projects.html"></a><a class="dropdown-item" href="https://leclairfoundation.org/pricing.html#tab-5">Social Media Management</a><a class="dropdown-item" href="https://leclairfoundation.org/pricing.html#tab-3">Graphic Design</a><a class="dropdown-item" href="https://leclairfoundation.org/pricing.html#tab-4" data-bs-toggle="modal" data-bs-target="#modal-1">Consulting</a><a class="dropdown-item" href="https://leclairfoundation.org/pricing.html#tab-2" data-bs-toggle="modal" data-bs-target="#modal-2">Hardware Repair &amp; Setup</a><a class="dropdown-item" href="pricing.html#tab-4">Organization Help</a><a class="dropdown-item" href="nonprofit-res.html">Resources</a></div>
+                        </div>
+                    </li>
                     <li class="nav-item">
                         <div class="nav-item dropdown nav-link"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#">More</a>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="nonprofit-res.html">Resources For Non Profits</a><a class="dropdown-item" href="projects.html"></a><a class="dropdown-item" href="projects.html">Portfolio</a><a class="dropdown-item" href="https://leclairfoundation-portal-4dd7babc1b52.herokuapp.com/">Login</a><a class="dropdown-item" href="grantinformation.html">Policy &amp; Grant Information</a><a class="dropdown-item" href="grantinformation.html"></a><a class="dropdown-item" href="https://buy.stripe.com/bIYbK2dlge2F4hi144">Donate</a><a class="dropdown-item" href="team.html">Volunteer</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="projects.html">Portfolio</a><a class="dropdown-item" href="projects.html">Blog</a><a class="dropdown-item" href="https://leclairfoundation-portal-4dd7babc1b52.herokuapp.com/">Login</a><a class="dropdown-item" href="grantinformation.html">Policy &amp; Grant Information</a><a class="dropdown-item" href="https://buy.stripe.com/bIYbK2dlge2F4hi144">Donate</a><a class="dropdown-item" href="team.html">Volunteer</a></div>
                         </div>
                     </li>
                 </ul><a class="btn btn-primary shadow" role="button" href="contacts.html" style="color: white;">Reach Out</a>
@@ -53,13 +65,14 @@
             </div>
             <div>
                 <ul class="nav nav-tabs text-center justify-content-center" role="tablist">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-1" style="color: var(--bs-primary);">Web Services</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-1" style="color: var(--bs-primary);">Web Services</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-3" style="color: black;">Graphic Design</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-2" style="color: black;">Hardware</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-5" style="color: black;">Social Media</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-4" style="color: black;">Consulting &amp; Support</a></li>
                 </ul>
                 <div class="tab-content">
-                    <div class="tab-pane fade show active" role="tabpanel" id="tab-1">
+                    <div class="tab-pane fade" role="tabpanel" id="tab-1">
                         <p></p>
                         <div class="row g-0 row-cols-1 row-cols-md-2 row-cols-xl-3 d-flex align-items-md-center align-items-xl-center" style="margin-top: 40px;">
                             <div class="col offset-xl-2 mb-4">
@@ -296,6 +309,49 @@
                             </div>
                         </div>
                         <p></p>
+                    </div>
+                    <div class="tab-pane fade show active" role="tabpanel" id="tab-4">
+                        <p></p>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title"></h4>
+                                <h6 class="text-muted card-subtitle mb-2">Consulting &amp; Support</h6>
+                                <p class="card-text"></p>
+                                <div>
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-6">Business &amp; Non-Profit</a></li>
+                                        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-7" style="color: rgb(0,183,121);">Individuals</a></li>
+                                        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-8"></a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" role="tabpanel" id="tab-6">
+                                            <p></p>
+                                            <h4>Consult us on:</h4>
+                                            <ul>
+                                                <li>Business &amp; Org Support and Help</li>
+                                                <li>Applying for tax-exempt status</li>
+                                                <li>General tech support</li>
+                                                <li>Code problems</li>
+                                                <li>Database setup and support</li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane" role="tabpanel" id="tab-7">
+                                            <p></p>
+                                            <h4>Consult us on:</h4>
+                                            <ul>
+                                                <li>Computer problems</li>
+                                                <li>Software issues</li>
+                                                <li>Computer setup</li>
+                                                <li>Understanding technology specs</li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane" role="tabpanel" id="tab-8">
+                                            <p>Content for tab 8.</p>
+                                        </div>
+                                    </div>
+                                </div><button class="btn btn-primary" type="button" style="color: white;">Reach Out</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

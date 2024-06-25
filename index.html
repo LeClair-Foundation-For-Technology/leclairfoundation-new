@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="assets/css/Articles-Cards-images.css">
+    <link rel="stylesheet" href="assets/css/Timeline---Gabriela-Carvalho.css">
+    <link rel="stylesheet" href="assets/css/Timeline-Steps.css">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFF1GYQ5JB"></script>
 <script>
@@ -34,18 +36,28 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md sticky-top navbar-shrink py-3 navbar-light" id="mainNav">
-        <div class="container"><a href="index.html"><img src="assets/img/Screenshot%202024-06-06%20032514.png" width="233" height="69"></a><a class="navbar-brand d-flex align-items-center" href="index.html"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-shrink py-3 navbar-light" id="mainNav">
+        <div class="container"><a href="index.html"><img src="assets/img/Screenshot%202024-06-06%20032514.png" width="202" height="70"></a><a class="navbar-brand d-flex align-items-center" href="index.html"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="mission.html">Mission</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link " href="index.html#grants">Grants</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item">
+                        <div class="nav-item dropdown nav-link"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#">About</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="mission.html">Our Mission</a><a class="dropdown-item" href="projects.html"></a><a class="dropdown-item" href="history.html">Our History</a><a class="dropdown-item" href="grantinformation.html"></a></div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item dropdown nav-link"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#">Students &amp; Individuals</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="https://leclairfoundation.org/pricing.html#tab-2">Hardware Repair &amp; Setup</a><a class="dropdown-item" href="computer-donations.html">Computer Donations</a><a class="dropdown-item" href="https://leclairfoundation.org/pricing.html#tab-4">Consulting &amp; Advice</a><a class="dropdown-item" href="grantinformation.html"></a></div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item dropdown nav-link"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#">Business &amp; Non Profits</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="https://leclairfoundation.org/pricing.html#tab-1">Websites</a><a class="dropdown-item" href="projects.html"></a><a class="dropdown-item" href="https://leclairfoundation.org/pricing.html#tab-5">Social Media Management</a><a class="dropdown-item" href="https://leclairfoundation.org/pricing.html#tab-3">Graphic Design</a><a class="dropdown-item" href="https://leclairfoundation.org/pricing.html#tab-4" data-bs-toggle="modal" data-bs-target="#modal-1">Consulting</a><a class="dropdown-item" href="https://leclairfoundation.org/pricing.html#tab-2" data-bs-toggle="modal" data-bs-target="#modal-2">Hardware Repair &amp; Setup</a><a class="dropdown-item" href="pricing.html#tab-4">Organization Help</a><a class="dropdown-item" href="nonprofit-res.html">Resources</a></div>
+                        </div>
+                    </li>
                     <li class="nav-item">
                         <div class="nav-item dropdown nav-link"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#">More</a>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="nonprofit-res.html">Resources For Non Profits</a><a class="dropdown-item" href="projects.html"></a><a class="dropdown-item" href="projects.html">Portfolio</a><a class="dropdown-item" href="https://leclairfoundation-portal-4dd7babc1b52.herokuapp.com/">Login</a><a class="dropdown-item" href="grantinformation.html">Policy &amp; Grant Information</a><a class="dropdown-item" href="grantinformation.html"></a><a class="dropdown-item" href="https://buy.stripe.com/bIYbK2dlge2F4hi144">Donate</a><a class="dropdown-item" href="team.html">Volunteer</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="projects.html">Portfolio</a><a class="dropdown-item" href="projects.html">Blog</a><a class="dropdown-item" href="https://leclairfoundation-portal-4dd7babc1b52.herokuapp.com/">Login</a><a class="dropdown-item" href="grantinformation.html">Policy &amp; Grant Information</a><a class="dropdown-item" href="https://buy.stripe.com/bIYbK2dlge2F4hi144">Donate</a><a class="dropdown-item" href="team.html">Volunteer</a></div>
                         </div>
                     </li>
                 </ul><a class="btn btn-primary shadow" role="button" href="contacts.html" style="color: white;">Reach Out</a>
@@ -58,8 +70,8 @@
             <div class="row pt-5">
                 <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto">
                     <div class="text-center">
-                        <p class="fw-bold text-success mb-2">Our non-profit offers free &amp; low cost services such as websites, graphic design, hardware repair, consulting and more!&nbsp;</p>
-                        <h1 class="fw-bold">Empowering our local communities, businesses, students and charities through technology.</h1>
+                        <p class="fw-bold text-success mb-2">Our non-profit offers low-cost and free solutions to a wide array of challenges &amp; problems our local communities struggle with.</p>
+                        <h1 class="fw-bold">Empowering our local communities, businesses, students and charities through technology &amp; assistance.</h1>
                     </div>
                 </div>
                 <div class="col-12 col-lg-10 mx-auto">
@@ -248,6 +260,45 @@
             </div>
         </div>
     </section>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Consulting &amp; Support</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body"><img alt="High Angle Photo of Woman Looking Upset in Front of Silver Laptop" src="assets/img/pexels-photo-4458425.jpeg" width="100%" height="224">
+                    <p style="padding: 20px;">Having troubles with your computer, some software or anything else tech related? Reach out to us for a call back or an email conversation! This service is totally free!</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><a class="btn btn-primary" role="button" href="contacts.html">Contact Us</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Technology Setup &amp; Support</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body"><img alt="Electronics Engineer Fixing Cables on Server" src="assets/img/pexels-photo-442150.jpeg" width="466" height="237">
+                    <p style="padding: 20px;">If you're located near our team or one of our partners, we can provide discounted, if not free, technology setup for most simple technology! Reach out today to get started!</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><a class="btn btn-primary" role="button" href="contacts.html">Contact Us</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-3">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Computer Donations</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body"><img alt="black Samsung Chromebook surrounded by dry leaves" src="assets/img/photo-1522206052224-9c5ad951dd74.jpg" width="100%" height="264">
+                    <p style="padding: 20px;">We understand the cost barrier to owning electronics. In a world where technology is part of our daily lives, cost should never be a reason you can't utilize the benefits of technology. We provide free and discounted laptops to those in need. Please reach out to us for the next steps. Anyone from age 16 and up can apply!</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><a class="btn btn-primary" role="button" href="contacts.html">Contact Us</a></div>
+            </div>
+        </div>
+    </div>
     <footer class="bg-primary-gradient">
         <div class="container py-4 py-lg-5 text-start">
             <div class="row justify-content-center">
